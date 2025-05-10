@@ -1,0 +1,19 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Xcode
+      run: sudo xcode-select -s /Applications/Xcode_15.2.app
+    - name: Build library
+      run: swift build --build-tests
+    - name: Run tests
+      run: swift test
