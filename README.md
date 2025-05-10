@@ -62,12 +62,14 @@ Check out the included SwiftUI demo under Examples/AetherExample:
 - Add logging/analytics by conforming to ResponseObserver
 - Drop into any UIKit/SwiftUI app with minimal setup
 
-## 🛡️ Compatibility
-Platform	Minimum Version
-- iOS	14
-- macOS	11
-- tvOS	14
-- watchOS	7
+## 🛠 Minimum Requirements
+
+| Platform | Version |
+|----------|---------|
+| iOS      | 14+     |
+| macOS    | 11+     |
+| tvOS     | 14+     |
+| watchOS  | 7+      |
 
 ## 📄 License
 MIT License — free for personal and commercial use.
